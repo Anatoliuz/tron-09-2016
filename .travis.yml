@@ -7,10 +7,3 @@ before_script:
 language: java
 jdk:
 - oraclejdk8
-deploy:
-  provider: heroku
-  api_key:
-    secure: IXy31JezuM5vtfBHtH5LIFKP6rSiQ1XPCdz6vHQFb/ZFm3x3VXD5SE6TZKKPjKel7GxREcaLpL9s5y8GErnEmwC+unwmkS0DL8a2yLNwMihWbhmKPu4TjNIeG8cS6XxXOOp+sndfz0vDuvaqMwDI3kpPB2ERtSMJbYf3oQuacaqCLLugNy/Vw5yM8T0F7OO8gVGbZtZb4SlqO+cyquSomkjTZDmjPCbxVd/M+vHm1lLxzZS3Gtf2r/0wLuL45Ivygh9dfNdN2xmClDQgYjcI6AloyKJ2eCIK3derU8vLamC6LTXUj9fi5v7zlMtItZ4xdsu6goCpcoHUIpy6Luj5Zod5evmT+xuNgME4X0END5yY7/H+2nPocP0Ykd5PgpOnnUZq1XQNYcXp9SYcOTqZSCmJGr1kTPUtK1RKLZ8RgnKXfVHg1WrRNSQkajm4nCxrqlBskPYeT5g8MKbp21kT2FG5W5CGjYTbS96S8KqvIQMHe4GlMqPjHgfFxJ5fIIqjfbhdupOacR4id2Ev0czgbQmuqRSbuPhVXkFloaK3dONO93/O5ovH8MTuRBod5z/29SU24jx6k2AKR7ClzVHOwklE+2zF6zRXYD2h98cu9W3WAC/mhJMoOHrarXEsN/8yzuMQObaXygVXWayfIFsBmAW1quflySa/W5r1Ck0ON4g=
-  app: tronmbot2
-  on:
-    repo: Anatoliuz/tron-09-2016
