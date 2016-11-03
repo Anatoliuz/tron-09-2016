@@ -2,10 +2,6 @@ package ru.mail.park.dao;
 
 import ru.mail.park.data.UserDataSet;
 
-/**
- * Created by zac on 21.10.16.
- */
-
 public interface UserDAO {
     UserDataSet registration(UserDataSet user);
 
