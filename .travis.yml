@@ -1,9 +1,16 @@
 services:
-  - mysql
+- mysql
 before_script:
-  - mysql -u root -e "create database TronDB;"
-  - mysql -u root -e "create user 'TronDB'@'localhost' identified by 'TronDB';"
-  - mysql -u root -e "grant all privileges on TronDB. * to 'TronDB'@'localhost';"
+- mysql -u root -e "create database TronDB;"
+- mysql -u root -e "create user 'TronDB'@'localhost' identified by 'TronDB';"
+- mysql -u root -e "grant all privileges on TronDB. * to 'TronDB'@'localhost';"
 language: java
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: J0tt93d+l4xLwc1oCBTPMbe0XRVEtVa/OMSE3YBPCx1NOsFsfqes6NwNHowjlG18wyJzalsA/a/FmXom5wjBn2QjOY+F6VZyGm6KL9rAgbIZWzu6PkLKOJp4svwOfwMfctle+jLMy9nnZlzC9h2gu9JbYRl3v0kToJkKfD0zIgtWUBSzZv/eDXKfzlID/1bQvaG0jKZT/Y6lUc+pnAjeT8QorbEIWG5Zadmm9aV8DI9bonMm/Meh4nswsMqJmC9nkDFxqqOpAoQRV1aw96ieCWxruXbIS4gAY7fODWbNxC/AU2P3CzCWj331/EwSUMa0UwCTqrPY+Sy8e6AHmR8pMT4BF+IWohWI1J2Db3HSZeNwOeuc3qT/aV3fZCP4sTNL7Yhvp5yA9U1Dp4at1Yr6l6ZlhAFQFxf068MwvPPG5eeQd2RwB1yJlHgHw/nDYUW/nVAXXjqY17lAhYThhEm1xy4T5bX6sTBziW8fdbrqQjokmL+fan+fgFMysfixdDG5z4bDCQB7OAh4qDoUgKAAJDCmeRiZeBJsbeo0n0nnDvcaLcNAD8Y9JMZ9MfioODe2Cmv4e2MY/1OCWIjHkVUaB6mlZHXErdjfVzdQ6bsb0B7Szva78TkONSNIFg7fLY94yWzplEBEZKn74xgixPEgLdDWNWpH9slvUE4WPNdGPlE=
+  app: tron-09-2016
+  on:
+    repo: Anatoliuz/tron-09-2016
